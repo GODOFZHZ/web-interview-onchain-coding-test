@@ -1,0 +1,89 @@
+@import "tailwindcss";
+html,body {
+  background-color: #0a1e3d;
+}
+.loading-spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-left-color: #00b8d4;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message-container {
+  padding: 2rem;
+  text-align: center;
+  background: #ffeeee;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.error-icon {
+  width: 50px;
+  height: 50px;
+  background: #ff4d4f;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 1rem;
+}
+
+.retry-button {
+  background: #00b8d4;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+
+.retry-button:hover {
+  background: #0091a8;
+}
+.symbol-pic {
+  display: flex;
+}
+.crypto-info {
+  display: flex;
+}
+.crypto-name-balance {
+  display: flex;
+}
+.crypto-name {
+  display: flex;
+}
+.visible {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
